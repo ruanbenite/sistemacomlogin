@@ -5,10 +5,33 @@ if (!isset($_SESSION['id']) && empty($_SESSION['id'])) {
     header("Location: login.php");
 }
 ?>
+<link href="css/layout.css" rel="stylesheet" type="text/css"/>
+<fieldset>
+    <legend>Perfil:</legend>
+    <?php
+    echo"<div id='img'><img src='" . fotos / $_SESSION['foto'] . "'></div>";
+    echo"ID: " . $_SESSION['id'];
+    echo"<br/>";
+    echo"nome: " . $_SESSION['nome'];
+    echo"<br/>";
+    echo"email: " . $_SESSION['email'];
+    echo"<br/>";
+    echo"senha: " . $_SESSION['senha'];
+    echo"<br/>";
+    echo"<h5><a href='sair.php'>Troca de usuário<a/></h5>";
+    ?>
+</fieldset>
 <form method="POST">
-    <h3><a href="adicionar.php">Cadastrar<a/></h3><br/><br/>
+    <table>
+        <tr>
+            <td>
+                <h3><a href="adicionar.php">Cadastrar<a/></h3>
+            </td>
+        </tr>
+    </table>
+    <table>
 
-    <table border="15px" width="100%">
+
         <tr>
             <th>Nome</th>
             <th>Email</th>
@@ -32,21 +55,9 @@ if (!isset($_SESSION['id']) && empty($_SESSION['id'])) {
         }
         ?>
     </table>
-    <fieldset border="10px">
-        <legend>Perfil:</legend>
-        <?php
-        echo"ID: " . $_SESSION['id'];
-        echo"<br/>";
-        echo"nome: " . $_SESSION['nome'];
-        echo"<br/>";
-        echo"email: " . $_SESSION['email'];
-        echo"<br/>";
-        echo"senha: " . $_SESSION['senha'];
-        ?>
-    </fieldset>
+
 </form>
 <br/>
-<h3><a href="sair.php">Troca de usuário<a/></h3>
-<?php
 
+<?php
 ?>

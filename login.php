@@ -15,21 +15,25 @@ if (isset($_POST['senha']) && !empty($_POST['senha']) && isset($_POST['email']) 
         $_SESSION['email'] = $dado['usu_email'];
         $_SESSION['senha'] = $dado['usu_senha'];
         $_SESSION['nome'] = $dado['usu_nome'];
+        $_SESSION['foto'] = $dado['usu_imagem'];
         header("Location: index.php");
     }
 }
 ?>
-<h1>Login</h1>
-<form method="POST">
+<link href="css/layout.css" rel="stylesheet" type="text/css"/>
+<fieldset>
+    <legend>Login</legend>
+    <form method="POST">
 
-    E-mail<br/>
-    <input type="text" name="email"/>
-    <br/><br/>
-    Senha<br/>
-    <input type="text" name="senha">
-    <br/><br/>
-    <input type="submit" value="Logar"/>
-    <br/><br/>
-    <i>Acesso padrão Email: adm e Senha: adm<i/>
-        <br/>
-</form>
+        E-mail<br/>
+        <input type="text" name="email"/>
+        <br/><br/>
+        Senha<br/>
+        <input type="text" name="senha">
+        <br/><br/>
+        <input type="submit" value="Logar"/>
+        <br/><br/>
+        <i>Acesso padrão Email: adm e Senha: adm<i/>
+            <br/>
+    </form>
+</fieldset>

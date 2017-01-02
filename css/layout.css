@@ -1,0 +1,36 @@
+/* 
+    Created on : 02/01/2017, 14:54:16
+    Author     : Ruan
+*/
+img {
+    margin-left: 0px;
+    margin-right: auto;
+    width: 100px;
+    height: 120px;
+}
+
+fieldset {
+    border:6px groove #ccc; /* Borde */
+    width: 19%;
+    background:#F8ECE0; /* Color de fondo */
+    color:#000; /* Color del texto de todo el contenido */
+}
+legend {
+    text-align:left; /* Puedes cambiarlo por center o right */
+    font-weight:bold; /* Estilo de la fuente del título */
+    color:#61380B; /* Color del título */
+}
+table{
+    background:#F8ECE0; /* Color de fondo */
+    border:6px groove #ccc; /* Borde */
+    width:100%;
+    margin-top:0px;
+    
+}
+table td{
+    border:18px ; /* Borde */ 
+    border-bottom-style: dotted;
+}
+ahref{
+    color:#000; /* Color del texto de todo el contenido */
+}
