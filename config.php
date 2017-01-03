@@ -1,5 +1,4 @@
 <?php
-session_start();
 $dns = "mysql:dbname=sistemacomlogin;host=localhost";
 $dbuser = "root";
 $dbpassword = "";

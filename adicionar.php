@@ -59,7 +59,7 @@ if ((isset($_POST['nome']) && !empty($_POST['nome']))) {
         echo'Email<br/>';
         echo' <input type="text" name="email"/><br/><br/>';
         echo'Senha<br/>';
-        echo'<input type="text" name="senha"/><br/><br/>';
+        echo'<input type="password" name="senha"/><br/><br/>';
         echo'Imagem de perfil<br/>';
         echo'<input type="file" name="arquivo"/><br/><br/>';
         echo' <input type="submit" value="Cadastrar">';

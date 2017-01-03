@@ -6,7 +6,7 @@ img {
     margin-left: 0px;
     margin-right: auto;
     width: 100px;
-    height: 120px;
+    height: 140px;
 }
 
 fieldset {
@@ -25,12 +25,15 @@ table{
     border:6px groove #ccc; /* Borde */
     width:100%;
     margin-top:0px;
-    
+
 }
 table td{
     border:18px ; /* Borde */ 
-    border-bottom-style: dotted;
+    border-bottom-style: inset;
 }
-ahref{
+div .menu{
+    background:#F8ECE0; /* Color de fondo */
+    border:6px groove buttonface; /* Borde */
+    width:10%;
     color:#000; /* Color del texto de todo el contenido */
 }

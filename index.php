@@ -9,7 +9,7 @@ if (!isset($_SESSION['id']) && empty($_SESSION['id'])) {
 <fieldset>
     <legend>Perfil:</legend>
     <?php
-    echo"<div id='img'><img src='" . fotos / $_SESSION['foto'] . "'></div>";
+    echo"<div id='img'><img src='" . $_SERVER['DOCUMENT_ROOT'] . "/sistemacomlogin/fotos/" . $_SESSION['foto'] . "'></div>";
     echo"ID: " . $_SESSION['id'];
     echo"<br/>";
     echo"nome: " . $_SESSION['nome'];
@@ -22,13 +22,11 @@ if (!isset($_SESSION['id']) && empty($_SESSION['id'])) {
     ?>
 </fieldset>
 <form method="POST">
-    <table>
-        <tr>
-            <td>
-                <h3><a href="adicionar.php">Cadastrar<a/></h3>
-            </td>
-        </tr>
-    </table>
+
+    <div>
+        <h3><a href="adicionar.php">Cadastrar<a/></h3>
+    </div>
+
     <table>
 
 

@@ -29,7 +29,7 @@ if (isset($_POST['senha']) && !empty($_POST['senha']) && isset($_POST['email']) 
         <input type="text" name="email"/>
         <br/><br/>
         Senha<br/>
-        <input type="text" name="senha">
+        <input type="password" name="senha">
         <br/><br/>
         <input type="submit" value="Logar"/>
         <br/><br/>
