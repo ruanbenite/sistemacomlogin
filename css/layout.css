@@ -31,9 +31,9 @@ table td{
     border:18px ; /* Borde */ 
     border-bottom-style: inset;
 }
-div .menu{
+div {
     background:#F8ECE0; /* Color de fondo */
     border:6px groove buttonface; /* Borde */
-    width:10%;
+    width:15%;
     color:#000; /* Color del texto de todo el contenido */
 }

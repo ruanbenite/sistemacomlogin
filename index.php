@@ -9,12 +9,11 @@ if (!isset($_SESSION['id']) && empty($_SESSION['id'])) {
 <fieldset>
     <legend>Perfil:</legend>
     <form> 
-        <div id="img"><img src="<?php $_SERVER['DOCUMENT_ROOT'] . "/sistemacomlogin/fotos/" . $_SESSION['foto']?>"></div>
+
         <?php
-        //echo"<div id='img'><img src='" . $_SERVER['DOCUMENT_ROOT'] . "/sistemacomlogin/fotos/" . $_SESSION['foto'] . "'></div>";
-        //$caminho = $_SERVER['SERVER_NAME'];
-        //$_SERVER['DOCUMENT_ROOT'] . "/sistemacomlogin/fotos/" . $_SESSION['foto'];
-        echo $caminho;
+        echo"<div id='img'><img src='/sistemacomlogin/fotos/" . $_SESSION['foto'] . "'></div>";
+        //$caminho = $_SERVER['SERVER_NAME']."/sistemacomlogin/fotos/" . $_SESSION['foto'];
+        // echo $caminho;
         //header("content-type: image/png");
         echo"<br/>";
         echo"ID: " . $_SESSION['id'];
