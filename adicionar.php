@@ -44,6 +44,7 @@ if ((isset($_POST['nome']) && !empty($_POST['nome']))) {
 <form method="POST" enctype="multipart/form-data">
     <link href="css/layout.css" rel="stylesheet" type="text/css"/>
     <?php
+    //update
     if (isset($_GET['id']) && !empty($_GET['id'])) {
         echo'<fieldset><legend>Alteração</legend>';
         echo' Nome<br/>';
@@ -53,6 +54,7 @@ if ((isset($_POST['nome']) && !empty($_POST['nome']))) {
         echo' <input type="submit" value="Alterar">';
         echo'</fieldset>';
     } else {
+        //insert
         echo'<fieldset><legend>Alteração</legend>';
         echo' Nome<br/>';
         echo'<input type="text" name="nome"/><br/><br/>';

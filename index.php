@@ -8,18 +8,26 @@ if (!isset($_SESSION['id']) && empty($_SESSION['id'])) {
 <link href="css/layout.css" rel="stylesheet" type="text/css"/>
 <fieldset>
     <legend>Perfil:</legend>
-    <?php
-    echo"<div id='img'><img src='" . $_SERVER['DOCUMENT_ROOT'] . "/sistemacomlogin/fotos/" . $_SESSION['foto'] . "'></div>";
-    echo"ID: " . $_SESSION['id'];
-    echo"<br/>";
-    echo"nome: " . $_SESSION['nome'];
-    echo"<br/>";
-    echo"email: " . $_SESSION['email'];
-    echo"<br/>";
-    echo"senha: " . $_SESSION['senha'];
-    echo"<br/>";
-    echo"<h5><a href='sair.php'>Troca de usuário<a/></h5>";
-    ?>
+    <form> 
+        <div id="img"><img src="<?php $_SERVER['DOCUMENT_ROOT'] . "/sistemacomlogin/fotos/" . $_SESSION['foto']?>"></div>
+        <?php
+        //echo"<div id='img'><img src='" . $_SERVER['DOCUMENT_ROOT'] . "/sistemacomlogin/fotos/" . $_SESSION['foto'] . "'></div>";
+        //$caminho = $_SERVER['SERVER_NAME'];
+        //$_SERVER['DOCUMENT_ROOT'] . "/sistemacomlogin/fotos/" . $_SESSION['foto'];
+        echo $caminho;
+        //header("content-type: image/png");
+        echo"<br/>";
+        echo"ID: " . $_SESSION['id'];
+        echo"<br/>";
+        echo"nome: " . $_SESSION['nome'];
+        echo"<br/>";
+        echo"email: " . $_SESSION['email'];
+        echo"<br/>";
+        echo"senha: " . $_SESSION['senha'];
+        echo"<br/>";
+        echo"<h5><a href='sair.php'>Troca de usuário<a/></h5>";
+        ?>
+    </form>
 </fieldset>
 <form method="POST">
 
@@ -56,6 +64,3 @@ if (!isset($_SESSION['id']) && empty($_SESSION['id'])) {
 
 </form>
 <br/>
-
-<?php
-?>
